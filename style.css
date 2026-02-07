@@ -47,3 +47,159 @@ body {
     padding-top: 40px;
     border-top: 1px solid #eee;
 }
+.download-container {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.pdf-icon {
+    margin-right: 20px;
+}
+
+.download-text {
+    flex-grow: 1;
+}
+
+.download-text h4 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.download-text p {
+    margin: 5px 0 0;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.download-btn {
+    background: #2c3e50; /* Deep Institutional Blue */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.download-btn:hover {
+    background: #34495e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.download-container {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.pdf-icon {
+    margin-right: 20px;
+}
+
+.download-text {
+    flex-grow: 1;
+}
+
+.download-text h4 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.download-text p {
+    margin: 5px 0 0;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.download-btn {
+    background: #2c3e50; /* Deep Institutional Blue */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.download-btn:hover {
+    background: #34495e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.science-visual-container {
+    background: #1a1a1a; /* Dark 'Lab' theme */
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.wave-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.wave-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.canvas-wrapper {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+/* Stress Wave - Jagged and Red */
+.neural-wave.stress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg, transparent, transparent 2px, #ff4d4d 3px, transparent 4px);
+    mask-image: linear-gradient(to right, black, transparent);
+    animation: jitter 0.2s infinite;
+}
+
+/* Recovery Wave - Smooth and Blue */
+.neural-wave.recovery {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #3498db 0%, transparent 70%);
+    mask-image: linear-gradient(to left, black, transparent);
+    opacity: 0.6;
+}
+
+@keyframes jitter {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(-1px); }
+}
