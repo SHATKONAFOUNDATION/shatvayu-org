@@ -203,3 +203,90 @@ body {
     50% { transform: translateY(2px); }
     100% { transform: translateY(-1px); }
 }
+.science-visual-container {
+    background: #1a1a1a; /* Dark 'Lab' theme */
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.wave-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.wave-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.canvas-wrapper {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+/* Stress Wave - Jagged and Red */
+.neural-wave.stress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg, transparent, transparent 2px, #ff4d4d 3px, transparent 4px);
+    mask-image: linear-gradient(to right, black, transparent);
+    animation: jitter 0.2s infinite;
+}
+
+/* Recovery Wave - Smooth and Blue */
+.neural-wave.recovery {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #3498db 0%, transparent 70%);
+    mask-image: linear-gradient(to left, black, transparent);
+    opacity: 0.6;
+}
+
+@keyframes jitter {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(-1px); }
+}
+/* Vagal Pulse Animation */
+.vagal-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: rgba(52, 152, 219, 0.4);
+    border-radius: 50%;
+    animation: vagal-beat 2s infinite;
+    z-index: 5;
+}
+
+@keyframes vagal-beat {
+    0% { width: 0; height: 0; opacity: 1; }
+    100% { width: 200px; height: 200px; opacity: 0; }
+}
+
+.neural-wave.recovery {
+    /* Smooth, deep blue for Yoga Nidra State */
+    background: linear-gradient(90deg, transparent, #2980b9, transparent);
+    opacity: 0.8;
+    height: 40%;
+    top: 30%;
+    filter: blur(2px);
+}
